@@ -1,0 +1,144 @@
+/* 
+    Document   : style
+    Created on : 9 mars 2012, 01:05:24
+    Author     : Francois
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+.all{
+    width: 1200px;
+    margin: auto;
+}
+
+header{
+}
+
+header > h1{
+    height: 84px;
+    color: #ffffff;
+    margin: auto;
+    padding: 50px 0 0 400px;
+}
+
+body{
+    background-image: url('../images/fond.jpg');
+    font-family: Arial;
+}
+
+/* Style navigation*/ 
+nav{
+    margin: auto;
+    font-size: 12px;
+    box-shadow: 2px 2px 12px black;
+    -webkit-box-shadow: 2px 2px 12px black;
+    -moz-box-shadow: 2px 2px 12px black;
+}
+
+nav ul{                             
+    list-style-type: none;
+    line-height: 30px;
+    padding: 0;
+    background-color: #e5e3e2;
+}
+
+nav li{
+    display: inline-block; 
+    text-align: center;
+}
+
+nav a{                              
+    width: 140px;
+    display: block;
+    text-decoration: none;
+    color: #000000;   
+    background : #e5e3e2;
+    transition: background 1s linear;
+    -webkit-transition: background 500ms linear;
+    -moz-transition: background 500ms linear;
+    -o-transition: background 500ms linear;
+}
+
+nav a:hover{
+    background: #89afd6;
+    color: #ffffff;
+}
+
+.active{
+    background: #89afd6;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+nav ul li ul{
+    display: none;
+}
+
+nav li ul{
+    position:absolute;
+}
+
+.sous-menu{
+    list-style-type: none;
+    line-height: 30px;
+    margin: 0;
+    padding: 0;
+    width: 140px;
+    border-top: 2px solid #69789f;
+    background-color: #e5e3e2;
+    box-shadow: 2px 2px 12px black;
+    -webkit-box-shadow: 2px 2px 12px black;
+    -moz-box-shadow: 2px 6px 12px black;
+}
+
+.sous-menu a{
+    display: block;
+    width: 140px;
+    font-weight: 12px;   
+    transition: background 1s linear;
+    -webkit-transition: background 500ms linear;
+    -moz-transition: background 500ms linear;
+    -o-transition: background 500ms linear;
+}
+
+.sous-menu a:hover{
+    background: #89afd6;
+    color: #ffffff;
+}
+/*Fin style navigation*/
+
+.logoSupinfo{
+    padding: 5px 0 0 0px;
+    float: left;
+}
+
+#corps{
+    width: 800px;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.2);
+    float: left;
+    box-shadow: 2px 2px 12px black;
+    -webkit-box-shadow: 2px 2px 12px black;
+    -moz-box-shadow: 2px 2px 12px black;
+}
+
+aside{
+    width: 380px;
+    height: 466px;
+    margin-left: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    float: right;
+    box-shadow: 2px 2px 12px black;
+    -webkit-box-shadow: 2px 2px 12px black;
+    -moz-box-shadow: 2px 2px 12px black;
+}
+
+p{
+    font-size: 14px;
+}
+
+

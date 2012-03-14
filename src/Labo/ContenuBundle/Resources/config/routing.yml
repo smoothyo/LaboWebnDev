@@ -1,0 +1,23 @@
+LaboContenuBundle_homepage:
+    pattern:  /accueil
+    defaults: { _controller: LaboContenuBundle:Contenu:index }
+    
+LaboContenuBundle_presentation:
+    pattern:  /le-laboratoire-webndev
+    defaults: { _controller: LaboContenuBundle:Contenu:presentation }
+    
+LaboContenuBundle_technologiesweb:
+    pattern:  /le-laboratoire-webndev/les-technologies-web
+    defaults: { _controller: LaboContenuBundle:Contenu:technologiesweb }
+
+LaboContenuBundle_projetequipe:
+    pattern:  /le-laboratoire-webndev/les-projets-en-equipe
+    defaults:  { _controller: LaboContenuBundle:Contenu:projetequipe }
+    
+LaboContenuBundle_communaute:
+    pattern:  /le-laboratoire-webndev/communaute
+    defaults:  { _controller: LaboContenuBundle:Contenu:communaute }    
+    
+LaboContenuBundle_nosprojets:
+    pattern:  /nos-projets
+    defaults:  { _controller: LaboContenuBundle:Contenu:nosprojets }

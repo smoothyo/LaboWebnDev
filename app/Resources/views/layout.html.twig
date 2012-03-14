@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <title>Laboratoire Web Supinfo</title>
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}" type="text/css" />
+        {%block css%}{% endblock %}
+        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+        {% block js %}{% endblock %}
+        <script src="{{ asset('javascript/javascript.js') }}"></script>
+    </head>
+    
+    <body>
+        <div class="all">
+            <header>
+                <img src="{{ asset('images/supinfoLogo.png')}}" class="logoSupinfo"/>
+                <h1>Laboratoire Developpement Web</h1>
+            </header>   
+            <nav>
+                <ul id="nav">
+                    <li><a href="{{ path ('LaboContenuBundle_homepage') }}" class="active">Accueil</a></li>
+                    <li class="jq"><a href="">Le Labo</a>
+                        <ul class="sous-menu">
+                            <li><a href="{{ path('LaboContenuBundle_presentation') }}" title="Présentation">Présentation</a></li>
+                            <li><a href="{{ path('LaboContenuBundle_technologiesweb') }}" title="Les technologies Web">Les technologies Web</a></li>
+                            <li><a href="{{ path('LaboContenuBundle_projetequipe')}}" title="Les projets en équipe">Les projets en équipe</a></li>
+                        </ul>
+
+                    </li>
+                    <li><a class="li" href="{{ path('LaboContenuBundle_communaute') }}" title="Communauté">Communauté</a></li>
+                    <li><a href="{{ path('LaboContenuBundle_nosprojets') }}" title="Nos projets">Nos projets 2012</a></li>
+                    <li><a href="#" title="Inscription">Inscription [fermé]</a></li>
+                </ul>
+            </nav>
+                
+                <div id="corps">
+                    {% block body %}
+                    {% endblock %}
+                </div>
+                    
+                <aside>
+                    {% block aside %}
+                        <div class=clickme">clickez</div>
+                        <img class="img" src="{{ asset('images/supinfoLogo.png')}}" style="display: none" width="100" height="123" />
+                    {% endblock%}
+                </aside>
+        </div>
+    </body>
+</html>

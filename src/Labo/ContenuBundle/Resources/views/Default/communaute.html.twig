@@ -1,0 +1,23 @@
+{% extends "::layout.html.twig" %}
+{% block css %}<link rel="stylesheet" href="{{ asset('Bundles/labocontenu/css/styleContenuBundle.css') }}" type="text/css" />{% endblock %}
+
+{% block body %}
+    <h1>Communauté</h1>
+    <h3>La plateforme "Level Up":</h3>
+    <p>
+        Cette année le laboratoire innove en mettant en place <b>une plateforme communautaire</b> d’aide au développement web. 
+        La plateforme « <b>Level-Up</b> » est là pour tout les étudiants de SUPINFO souhaitant poser des questions concernant leur problèmes techniques en matière
+        de développement.<br><br>
+        Si vous vous êtes déjà confronté à un <b>problème insolvable</b> par vous-même, n’auriez vous pas voulu trouver des gens pour vous aider rapidement ? 
+        Plus la peine de fouiller dans les forums, venez directement poser la question sur la plateforme « <b>Level-Up</b> »  et la communauté vous répondra.
+    </p>
+    <h3>Comment ça marche:</h3>
+    <p>
+        Le labo Web’n'Dev se reconcentre sur l’essentiel et met en avant l’aide entre les étudiants. 
+        Vivons ensemble <b>le renouveau du communautaire online</b> ! Grâce à « <b>Level-Up</b> », tout le monde est gagnant : <b>on y apprend et on s’y construit une notoriété</b>.<br><br>
+        Aidez vos collègues qui sont en difficulté et suivant la qualité de votre réponse, les internautes vous noteront. 
+        Ainsi vous gagnerez en <b>confiance et en réputation : identifions les nouveaux experts de demain par vos participations !</b><br><br>
+        C’est dans ce contexte convivial que le labo. Web’n'Dev de SUPINFO Paris vous accueille… Alors n’hésitez plus, la Plateforme « Level-Up » est <b>faite pour vous</b>.
+    </p>
+    <img class="logo_technologies" src="{{ asset('bundles/labocontenu/images/levelup.png')}} "/>
+{% endblock %}

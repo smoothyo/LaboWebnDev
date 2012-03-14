@@ -1,0 +1,52 @@
+/* 
+    Document   : styleContenuBundle
+    Created on : 9 mars 2012, 18:50:43
+    Author     : Francois
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+#corps > h1{
+    padding: 5px 0 0 20px;
+}
+
+#corps > h3{
+    padding: 0 0 0 20px;
+    color: #e5e3e2;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#corps > h3 .index{
+    text-align: center;
+}
+
+#corps > p{
+    padding: 5px 0 0 20px;
+}
+
+#corps #block_article{
+    width: 800px;
+    height: 250px;
+    background-color: rgba(0, 0, 0, 0.0.1);
+}
+
+#corps .article1{
+    width: 180px;
+    margin-left: 50px;
+    padding: 0px;
+    float: left;
+}
+
+#corps .article1 > article{
+    width: 180px;
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+.logo_technologies{
+    padding-left: 20px;
+}
